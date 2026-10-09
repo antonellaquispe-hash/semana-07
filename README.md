@@ -93,6 +93,10 @@ python manage.py orm_queries
 El registro de cada consulta y los conteos (antes y después de optimizar la
 portada) están en [`ENTREGABLE.md`](ENTREGABLE.md).
 
+El trabajo extra del duelo —las ocho consultas del equipo, la comparación con
+las de la IA, la clasificación de sus fallos y la evidencia del agente— está en
+[`ENTREGABLE_EXTRA.md`](ENTREGABLE_EXTRA.md).
+
 ## Estructura
 
 | Ruta | Para qué |
