@@ -80,6 +80,19 @@ python manage.py test
 
 Una sola debe fallar mientras no hayas hecho la Parte 2.
 
+## Procedimiento de la sesión
+
+Además del laboratorio, el proyecto cubre el procedimiento de la sesión (pasos
+1 a 11). Las consultas están en `blog/session_queries.py` y se ejecutan todas
+—con su resultado y su conteo de consultas SQL— con:
+
+```bash
+python manage.py orm_queries
+```
+
+El registro de cada consulta y los conteos (antes y después de optimizar la
+portada) están en [`ENTREGABLE.md`](ENTREGABLE.md).
+
 ## Estructura
 
 | Ruta | Para qué |
