@@ -36,7 +36,17 @@ class Tag(models.Model):
         return self.name
 
 
+class PublishedManager(models.Manager):
+    """Custom manager that returns only the published posts."""
+
+    def get_queryset(self):
+        return super().get_queryset().filter(published=True)
+
+
 class Post(models.Model):
+    objects = models.Manager()
+    published_posts = PublishedManager()
+
     title = models.CharField(max_length=200)
     body = models.TextField(blank=True)
     author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name="posts")
