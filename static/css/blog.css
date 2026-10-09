@@ -1,0 +1,17 @@
+/* Static files of the blog: proves step 1 is wired up. */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2rem auto;
+  max-width: 42rem;
+  line-height: 1.5;
+}
+
+article {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+span {
+  margin-right: 0.5rem;
+  color: #2a6;
+}

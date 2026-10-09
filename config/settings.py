@@ -61,4 +61,22 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Step 9: log every SQL query the ORM sends, so the number of queries can be
+# counted while walking the template. Quiet when DEBUG is off.
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {"class": "logging.StreamHandler"},
+    },
+    "loggers": {
+        "django.db.backends": {
+            "level": "DEBUG" if DEBUG else "WARNING",
+            "handlers": ["console"],
+        },
+    },
+}
