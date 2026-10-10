@@ -16,11 +16,11 @@ SOURCES = {
 }
 
 STATUS_LABEL = {
-    "ok": "✔ correcta",
-    "costly": "⚠ correcta pero cara",
-    "wrong": "✘ resultado distinto",
-    "error": "✘ error",
-    "todo": "· sin escribir",
+    "ok": "[OK] correcta",
+    "costly": "[!] correcta pero cara",
+    "wrong": "[X] resultado distinto",
+    "error": "[X] error",
+    "todo": "[-] sin escribir",
 }
 
 
